@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dose</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/common/css/style.css">
+    <link rel="stylesheet" href="assets/daily dose/css/content.css">
+    <link rel="stylesheet" href="assets/daily dose/css/card.css">
+    <link rel="stylesheet" href="assets/daily dose/css/currentaffairscard.css">
+    <link rel="stylesheet" href="assets/daily dose/css/dropdowncurrentaffairs.css">
+    <link rel="stylesheet" href="assets/daily dose/css/media600px.css" media="screen and (max-width: 600px)">
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div class="spinner">
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium, expedita, suscipit temporibus aspernatur dolorem repellendus pariatur dolore esse modi neque similique quisquam nesciunt at aut eligendi velit cumque hic.Optio cum sit,
+            voluptatem autem facere libero sed in perferendis asperiores, ipsa quod vel reiciendis velit fuga eum! Totam aliquid ex iste laboriosam sit dicta similique in repudiandae illo assumenda.</p>
+    </div>
+
+    <!-- Topbar -->
+
+    <div id="topbar" class="df">
+        <div id="logo"> </div>
+        <div class="lead my-4 lead-txt">
+            Dashboard Mega
+        </div>
+        <!-- toggle-menu -->
+        <!--<div class="hamburger" id="menu-toggle">
+            <div class="circle icon">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </div>
+        </div>-->
+        <!-- /toggle-menu -->
+
+
+        
+
+        <div id="right-top" class="df">
+            <div id="search">
+                <input id="sinput" type="text" placeholder="search all tests">
+                <button id="btn2"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="df">
+                <div class="item" id="item-1" onclick="Show_search()"><i class="fas fa-search"></i></div>
+                <div class="item" id="item-2" style="display: none;"><i class="fas fa-times"></i></div>
+                <!-- <div class="item" id="item-4"><i class="fa fa-bell"></i></div> -->
+                <div class="item" id="item-3"><i class="fa fa-user-circle"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- /topbar -->
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="sidebar shadow">
+            <ul class="sidebar-nav">
+                <li class="wactive">
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="menu-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="menu-text">Practice</span>
+
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Topics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Flash Cards</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                        <span class="menu-text">Mock Test</span>
+
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+                                <span class="badge badge-pill badge-warning">Live</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Free Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sidebar-icon1"><i class="fa fa-arrow-right"
+                                        aria-hidden="true"></i></span>
+                                <span class="menu-text">Upcoming</span>
+                            </a></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-gem" aria-hidden="true"></i></span>
+                        <span class="menu-text">Mega Test</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-newspaper" aria-hidden="true"></i></span>
+                        <span class="menu-text">Daily Dose</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Vocabulary Booster</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Current Affairs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">The Hindu News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">The Hindu Analysis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="menu-text">MCQfy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="menu-text">Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                        <span class="menu-text">Register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-body">
+        <div id="tabs">
+            <div class="col-xs-12 ">
+                <nav class="tabsss">
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all"
+                            role="tab" aria-controls="nav-all" aria-selected="true">Vocabulary</a>
+                        <a class="nav-item nav-link" id="nav-free-tab" data-toggle="tab" href="#nav-free" role="tab"
+                            aria-controls="nav-free" aria-selected="false">Current Affairs</a>
+                        <a class="nav-item nav-link" id="nav-upcoming-tab" data-toggle="tab" href="#nav-upcoming"
+                            role="tab" aria-controls="nav-upcoming" aria-selected="false">THE HINDU News</a>
+                        <a class="nav-item nav-link" id="nav-upcomings-tab" data-toggle="tab" href="#nav-upcomings"
+                            role="tab" aria-controls="nav-upcomings" aria-selected="false">THE HINDU Analysis</a>
+                    
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div id="content" class="container-fluid">
+
+            
+
+            <div id="section" class="section">
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+                    <div class="tab-pane fade in active" id="nav-all" role="tabpanel" aria-labelledby="nav-live-tab">
+                        <form class="search-form" action="">
+                            <input class="search-input" type="text" placeholder="Search...">
+                            <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        <div class="container-fluids">
+                            <div class="card-deck">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card mycard ">
+                                        <div class="card-body">
+                                            <h6 class="text-muted card-subtitle mb-2">Vocabulary</h6>
+                                            <h4 class="card-title-practice">Word Name</h4>
+                                            <hr>
+                                            <ul class = "topic-info">
+                                                <li>
+                                                    <b>Meaning:</b>Frail(कमजोर) 
+                                                </li>
+                                                <li>
+                                                    <b>Speech:</b>Adjective
+                                                </li>
+                                                <li>
+                                                    <b>Synonyms:</b>Weak, Feeble
+                                                </li>
+                                                <li>
+                                                    <b>Antonyms:</b>Strong
+                                                </li>
+                                                <li>
+                                                    <b>Example:</b>Those who are old or infirm aren't allowed to travel.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card mycard ">
+                                        <div class="card-body">
+                                            <h6 class="text-muted card-subtitle mb-2">Vocabulary</h6>
+                                            <h4 class="card-title-practice">Word Name</h4>
+                                            <hr>
+                                            <ul class = "topic-info">
+                                                <li>
+                                                    <b>Meaning:</b>Frail(कमजोर) 
+                                                </li>
+                                                <li>
+                                                    <b>Speech:</b>Adjective
+                                                </li>
+                                                <li>
+                                                    <b>Synonyms:</b>Weak, Feeble
+                                                </li>
+                                                <li>
+                                                    <b>Antonyms:</b>Strong
+                                                </li>
+                                                <li>
+                                                    <b>Example:</b>Those who are old or infirm aren't allowed to travel.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card mycard ">
+                                        <div class="card-body">   
+                                            <h6 class="text-muted card-subtitle mb-2">Vocabulary</h6>
+                                            <h4 class="card-title-practice">Word Name</h4>
+                                            <hr>
+                                            <ul class = "topic-info">
+                                                <li>
+                                                    b>Meaning:</b>Frail(कमजोर) 
+                                                </li>
+                                                <li>
+                                                    <b>Speech:</b>Adjective
+                                                </li>
+                                                <li>
+                                                    <b>Synonyms:</b>Weak, Feeble
+                                                </li>
+                                                <li>
+                                                    <b>Antonyms:</b>Strong
+                                                </li>
+                                                <li>
+                                                    <b>Example:</b>Those who are old or infirm aren't allowed to travel.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="card mycard ">
+                                        <div class="card-body">
+                                            <h6 class="text-muted card-subtitle mb-2">Vocabulary</h6>
+                                            <h4 class="card-title-practice">Word Name</h4>
+                                            <hr>
+                                            <ul class = "topic-info">
+                                                <li>
+                                                    <b>Meaning:</b>Frail(कमजोर) 
+                                                </li>
+                                                <li>
+                                                    <b>Speech:</b>Adjective
+                                                </li>
+                                                <li>
+                                                    <b>Synonyms:</b>Weak, Feeble
+                                                </li>
+                                                <li>
+                                                    <b>Antonyms:</b>Strong
+                                                </li>
+                                                <li>
+                                                    <b>Example:</b>Those who are old or infirm aren't allowed to travel.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+
+                    <div class="tab-pane fade" id="nav-free" role="tabpanel" aria-labelledby="nav-free-tab">
+                        <div class="drop">
+                            <select name="" id="dropdown-toggle">
+                                <option value="date1">02 Dec. 2020</option>
+                                <option value="date2">01 Dec. 2020</option>
+                                <option value="date3">30 Nov. 2020</option>
+                                <option value="date4">29 Nov. 2020</option>
+                                <option value="date5">28 Nov. 2020</option>
+                            </select>
+                        </div>
+
+                        <button class="collapsibless">
+                            <h4>Organisation of Islamic cooperation<h4> 
+                            <p class="text text0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, id. Amet magnam, itaque ex iste repellat id <span class="dots dots0">.....</span> <span class="moretext moretext0"> Consequuntur aliquid, eligendi adipisci perferendis ipsa dolore obcaecati? Eum tenetur vero magnam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita debitis accusantium iste dicta officiis repellat, placeat eius perspiciatis amet, repellendus pariatur sequi tempora sunt dolorem voluptatem ipsa modi delectus?</span></p>
+                            <span class="read-more read-more0">Read More</span>    
+                        </button>
+                        <button class="collapsibless">
+                            <h4>Organisation of Islamic cooperation<h4> 
+                            <p class="text text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, id. Amet magnam, itaque ex iste repellat id <span class="dots dots1">.....</span> <span class="moretext moretext1"> Consequuntur aliquid, eligendi adipisci perferendis ipsa dolore obcaecati? Eum tenetur vero magnam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita debitis accusantium iste dicta officiis repellat, placeat eius perspiciatis amet, repellendus pariatur sequi tempora sunt dolorem voluptatem ipsa modi delectus?</span></p>
+                            <span class="read-more read-more1">Read More</span>
+                        </button>
+                        <button class="collapsibless">
+                            <h4>Organisation of Islamic cooperation<h4> 
+                            <p class="text text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, id. Amet magnam, itaque ex iste repellat id <span class="dots dots2">.....</span> <span class="moretext moretext2"> Consequuntur aliquid, eligendi adipisci perferendis ipsa dolore obcaecati? Eum tenetur vero magnam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita debitis accusantium iste dicta officiis repellat, placeat eius perspiciatis amet, repellendus pariatur sequi tempora sunt dolorem voluptatem ipsa modi delectus?</span></p>
+                            <span class="read-more read-more2">Read More</span>
+                        </button>
+                        <button class="collapsibless">
+                            <h4>Organisation of Islamic cooperation<h4> 
+                            <p class="text text3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, id. Amet magnam, itaque ex iste repellat id <span class="dots dots3">.....</span> <span class="moretext moretext3"> Consequuntur aliquid, eligendi adipisci perferendis ipsa dolore obcaecati? Eum tenetur vero magnam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita debitis accusantium iste dicta officiis repellat, placeat eius perspiciatis amet, repellendus pariatur sequi tempora sunt dolorem voluptatem ipsa modi delectus?</span></p>
+                            <span class="read-more read-more3">Read More</span> 
+                        </button>    
+                    
+                    
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-upcoming" role="tabpanel" aria-labelledby="nav-upcoming-tab">
+
+                        <div class="drop">
+                            <select name="" id="dropdown-toggle">
+                                <option value="date1">Front Page</option>
+                                <option value="date2">National</option>
+                                <option value="date3">International</option>
+                                <option value="date4">Business</option>
+                                <option value="date5">Sport</option>
+                            </select>
+                            <select name="" id="dropdown-toggle">
+                                <option value="date1">02 Dec. 2020</option>
+                                <option value="date2">01 Dec. 2020</option>
+                                <option value="date3">30 Nov. 2020</option>
+                                <option value="date4">29 Nov. 2020</option>
+                                <option value="date5">28 Nov. 2020</option>
+                            </select>
+                        </div>
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+    
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+    
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-upcomings" role="tabpanel" aria-labelledby="nav-upcomings-tab">
+
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="collapsibles">Card Heading</button>
+                        <div class="contents">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+  
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    </div>
+
+    <ul id="bottom-bar" class="df">
+        <li class="active"><a><i class="fa fa-home" aria-hidden="true"></i> <span> Home</span> </a></li>
+        <li><a href="/"><i class="fas fa-book-open"></i> <span> Practice</span> </a></li>
+        <li><a><i class="fas fa-pen"></i> <span> Test</span> </a></li>
+        <li id="more_menu_btn" class=""><a><i class="fas fa-ellipsis-v"> </i> <span> More</span> </a></li>
+    </ul>
+    <div id="profile_menu">
+        <li class="pro" id="pro-1"> <a href="">Logout</a></li>
+    </div>
+    <div id="more-menu">
+        <li class="more" id="more-1">
+            <a href="#">Mega Test</a></li>
+        <li class="more" id="more-2">
+            <a href="#">Rapid Test</a></li>
+        <li class="more" id="more-3">
+            <a href="#">Current Affairs</a> </li>
+        <li class="more" id="more-4">
+            <a href="#">Solved doubts/answers</a> </li>
+        <li class="more" id="more-5">
+            <a href="#">Mega Test</a> </li>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <script type="text/javascript">
+        
+
+        var coll = document.getElementsByClassName("collapsibles");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("actives");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+       
+    </script>
+    <script src="assets/common/js/script.js"></script>
+    <script src="assets/daily dose/js/currentaffairreadmore.js"></script>
+</body>
+
+</html>

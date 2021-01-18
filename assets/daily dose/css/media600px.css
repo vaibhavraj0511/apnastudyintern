@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    .card {
+        margin: auto;
+        margin-top: 20px;
+        flex-grow: 1;
+        max-width: 88vw;
+    }
+    #dropdown-toggle{
+        width: 130px;
+        padding: 5px;
+    }
+    select option{
+        border: none;
+        font-size: 12px;
+        width: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    #bottom-bar {
+        display: flex;
+        z-index: 100;
+        margin-bottom: 0;
+    }
+    
+    #logo {
+        display: block;
+    }
+    
+
+    #search input {
+        width: 150px;
+    }
+    .searchbtn{
+        width: 175px;
+    }
+    #tab{
+        padding: 0 0;
+        
+    }
+   
+    
+}

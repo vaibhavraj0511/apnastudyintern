@@ -1,0 +1,95 @@
+
+
+
+
+#tabs {
+    background: rgb(0 27 148);
+    color: #ffffff;
+    box-shadow: 0 1px 0px rgb(82 81 86);
+    width: 100%;
+    height: 50px;
+    border: 0;
+    padding: 21px 0px;
+    padding-bottom: 0px;
+
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #000000;
+    background-color: #ffffff;
+    /* font-size: 20px; */
+}
+
+#nav-tab {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    margin-left: -15px;
+    margin-right: -22px;
+}
+
+.nav-fill .nav-item {
+    -ms-flex: none;
+    flex: none;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #000;
+}
+
+.nav-tabs .nav-link {
+    /* border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem; */
+    color: #ffffff;
+    /* border: 2px solid #ffffff; */
+    /* font-size: 14px; */
+}
+
+
+
+
+
+#section {
+    margin-top: 15px;
+    width: 100%;
+}
+.pb-3, .py-3 {
+    padding-bottom: 4rem!important;
+}
+
+/* Vocabulary Search bar*/
+
+.search-form{
+    max-width: 350px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.search-input{
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    float: left;
+    border: 1px solid rgb(0 27 148);
+    width: 85%;   
+    border-radius: 5px 0 0 5px;
+}
+
+button.search-btn{
+    width: 15%;
+    height: 12%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: rgb(0 27 148);
+    cursor: pointer;
+    
+}

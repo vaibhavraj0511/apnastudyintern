@@ -1,0 +1,21 @@
+.drop{
+   margin-top: 35px;
+    float: right;
+    margin-right: 15px;
+}
+
+#dropdown-toggle{
+    background: rgb(0 27 148);
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#dropdown-toggle option{
+    background: white;
+    color: black;
+    border: none;
+}
+
+
